@@ -5,6 +5,9 @@
 #include <sstream>
 using namespace std;
 
+//this counts how many airports we have for creating arrays (I have it go 1 above the amount to be safe)
+int airportCount = 1;
+
 int AirportGraph::findAirportIndex(const string& code) {
     if (airportIndexMap.find(code) != airportIndexMap.end()) {
         return airportIndexMap[code];
