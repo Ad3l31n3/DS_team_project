@@ -13,5 +13,13 @@ int main() {
     cout << "\n--- Airport Graph (Adjacency List) ---" << endl;
     graph.displayGraph();
 
+    graph.findShortestRoute("IAD", "MIA", true, true);
+    graph.findShortestRoute("PIT", "ACT", true, true);
+
+    graph.findAllShortestRoutesToState("ATL", "TX");
+    
+    graph.findShortestRouteGivenStops("IAD", "MIA", 3);
+    graph.findShortestRouteGivenStops("PIT", "ACT", 2);
+
     return 0;
 }
